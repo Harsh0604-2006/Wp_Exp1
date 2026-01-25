@@ -3,72 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100% pure</title>
+    <title>Welcome to Ramashrey Dosa Centre</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #A36A00;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, nav, section, footer {
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        /* TYPEWRITER EFFECT */
+        .typewriter-wrapper {
+            text-align: center;
+        }
+
+        .typewriter {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #333;
+            width: 0;
+            animation: typing 4s steps(52, end) forwards,
+                       blink 0.7s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 52ch; }
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+    </style>
 </head>
 
-<body background="assets/Background.jpg" style="background-size: cover; background-attachment: fixed; background-position: center; margin: 0; padding: 0;">
+<body 
+      style="background-size: cover; background-attachment: fixed; background-position: center;">
 
-    <header style="background-color: rgba(255, 107, 53, 0.9); color: white; text-align: center; padding: 30px;">
-        <h1 style="margin: 0; font-size: 42px;">Ramashrey</h1>
-        <p style="margin: 10px 0 0 0; font-size: 18px;">Welcome to the dosa centre</p>
-    </header>
+<header style="background-color: rgba(255, 107, 53, 0.9); color: white; padding: 30px;">
+    <h1 style="margin: 0; font-size: 42px;">Ramashrey</h1>
+    <p style="margin-top: 10px; font-size: 18px;">Welcome to the dosa centre</p>
+</header>
 
-    <nav style="background-color: rgba(255, 255, 255, 0.8); padding: 10px;">
-        <table cellpadding="10" style="margin: 0 auto;">
-            <tr>
-                <td><a href="#home" style="text-decoration: none; color: #ff6b35; font-weight: bold;">Home</a></td>
-                <td><a href="#menu" style="text-decoration: none; color: #ff6b35; font-weight: bold;">Menu</a></td>
-                <td><a href="#about" style="text-decoration: none; color: #ff6b35; font-weight: bold;">About Us</a></td>
-                <td><a href="#contact" style="text-decoration: none; color: #ff6b35; font-weight: bold;">Contact</a></td>
-            </tr>
-        </table>
-    </nav>
+<nav style="background-color: rgba(255, 255, 255, 0.8); padding: 10px;">
+    <table cellpadding="10">
+        <tr>
+            <td><a href="#home" style="text-decoration:none; color:#ff6b35; font-size:20px; font-weight:bold;">Home</a></td>
+            <td><a href="#menu" style="text-decoration:none; color:#ff6b35; font-size:20px; font-weight:bold;">Menu</a></td>
+            <td><a href="#about" style="text-decoration:none; color:#ff6b35; font-size:20px; font-weight:bold;">About Us</a></td>
+            <td><a href="#contact" style="text-decoration:none; color:#ff6b35; font-size:20px; font-weight:bold;">Contact</a></td>
+        </tr>
+    </table>
+</nav>
 
-    <section id="home" style="padding: 20px; background-color: rgba(255, 255, 255, 0.85); margin: 20px; border-radius: 8px;">
-        <h2 style="color: #ff6b35; font-size: 28px;">Home</h2>
-        <p style="font-size: 16px;">Experience the pure Harmnony of authentic South Indian food</p>
-    </section>
+<marquee style="background-color:#ff6b35; color:white; padding:10px; font-size:18px;">
+    Welcome to Ramashrey Dosa Centre – TODAY'S SPECIAL: MYSORE MASALA DOSA & ROSE FALOODA
+</marquee>
 
-    <section id="menu" style="padding: 20px;">
-        <h2 style="color: #ff6b35; font-size: 28px;">Menu</h2>
-        <table border="1" cellpadding="15" cellspacing="0" style="margin-left: 100px; border-collapse: collapse; background-color: rgba(255, 255, 255, 0.9); box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-            <tr>
-                <td align="center" style="padding: 20px; border: 2px solid #ff6b35;">
-                    <img src="assets/tea.jpg" height="100" style="border-radius: 8px;"><br>
-                    <strong style="color: #333; font-size: 16px;">Tea</strong>
-                </td>
-                <td align="center" style="padding: 20px; border: 2px solid #ff6b35;">
-                    <img src="assets/dosa.webp" height="100" style="border-radius: 8px;"><br>
-                    <strong style="color: #333; font-size: 16px;">Masala Dosa</strong>
-                </td>
-            </tr>
-            <tr>
-                <td align="center" style="padding: 20px; border: 2px solid #ff6b35;">
-                    <img src="assets/coffee.jpg" height="100" style="border-radius: 8px;"><br>
-                    <strong style="color: #333; font-size: 16px;">Coffee</strong>
-                </td>
-                <td align="center" style="padding: 20px; border: 2px solid #ff6b35;">
-                    <img src="assets/pineapple sheera.jpg" height="100" style="border-radius: 8px;"><br>
-                    <strong style="color: #333; font-size: 16px;">Pineapple Sheera</strong>
-                </td>
-            </tr>
-        </table>
-    </section>
+<section id="home" style="padding:25px; background-color: rgba(255,255,255,0.85); font-size:20px; margin:20px; border-radius:8px;">
+    <p class="typewriter-wrapper">
+        <span class="typewriter">
+            Experience the pure harmony of authentic South Indian food
+        </span>
+    </p>
+</section>
 
-    <section id="about" style="padding: 20px; background-color: rgba(255, 255, 255, 0.85); margin: 20px; border-radius: 8px;">
-        <h2 style="color: #ff6b35; font-size: 28px;">About Us</h2>
-        <p style="font-size: 16px;">We make the best dosas and idlis.</p>
-    </section>
+<section id="menu" style="padding:20px;">
+    <h2 style="color:#ff6b35;">Menu</h2>
+    <h3 style="color:#ff6b35;">Our Most Ordered Items</h3>
 
-    <section id="contact" style="padding: 20px; background-color: rgba(255, 255, 255, 0.85); margin: 20px; border-radius: 8px;">
-        <h2 style="color: #ff6b35; font-size: 28px;">Contact</h2>
-        <p style="font-size: 16px;">Email: cookery@gmail.com</p>
-        <p style="font-size: 16px;">Phone: 8668556842</p>
-    </section>
+    <table border="1" cellpadding="15" cellspacing="0"
+           style="border-collapse: collapse; background-color: rgba(255,255,255,0.9); box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
 
-    <footer style="background-color: rgba(51, 51, 51, 0.9); color: white; text-align: center; padding: 15px; margin-top: 20px;">
-        <p style="margin: 0;">&copy; 2026 100% pure veg. All rights reserved.</p>
-    </footer>
+        <tr>
+            <td align="center" style="border:2px solid #ff6b35;">
+                <a href="https://www.youtube.com/shorts/6DCRQ0wx1tg" style="text-decoration:none; color:black;">
+                    <img src="assets/tea.jpg" height="100" style="border-radius:8px;"><br>
+                    <strong>Tea</strong>
+                </a>
+            </td>
+
+            <td align="center" style="border:2px solid #ff6b35;">
+                <a href="https://www.youtube.com/watch?v=J75VQSxOtdo&pp=ygUTbWFzYWxhIGRvc2EgIHJlY2lwZQ%3D%3D" style="text-decoration:none; color:black;">
+                    <img src="assets/dosa.webp" height="100" style="border-radius:8px;"><br>
+                    <strong>Masala Dosa</strong>
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center" style="border:2px solid #ff6b35;">
+                <a href="https://www.youtube.com/shorts/qgMU8nFeg-g" style="text-decoration:none; color:black;">
+                    <img src="assets/coffee.jpg" height="100" style="border-radius:8px;"><br>
+                    <strong>Coffee</strong>
+                </a>
+            </td>
+
+            <td align="center" style="border:2px solid #ff6b35;">
+                <a href="https://www.youtube.com/shorts/lm_JdH2Blnc" style="text-decoration:none; color:black;">
+                    <img src="assets/pineapple sheera.jpg" height="100" style="border-radius:8px;"><br>
+                    <strong>Pineapple Sheera</strong>
+                </a>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<section id="about" style="padding:20px; font-size:20px; background-color: rgba(255,255,255,0.85); margin:20px; border-radius:8px;">
+    <h2 style="color:#ff6b35;">About Us</h2>
+    <p>
+        Ramashrey is a pure vegetarian South Indian restaurant serving fresh,
+        authentic food prepared with traditional recipes and care.
+    </p>
+</section>
+
+<section id="contact" style="padding:20px; font-size:20px; background-color: rgba(255,255,255,0.85); margin:20px; border-radius:8px;">
+    <h2 style="color:#ff6b35;">Contact</h2>
+    <p>Email: cookery@gmail.com</p>
+    <p>Phone: 8668556842</p>
+</section>
+
+<footer style="background-color: rgba(51,51,51,0.9); color:white; padding:15px;">
+    <p>&copy; Cooked by Harsh and Atharva</p>
+</footer>
 
 </body>
 </html>
