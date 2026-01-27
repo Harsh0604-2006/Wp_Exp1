@@ -39,85 +39,164 @@
                        blink 0.7s step-end infinite;
         }
 
+        /* Enhanced Form Styling */
         form {
             text-align: left; 
-            padding: 30px;
+            padding: 40px;
             font-size: 18px;
-            background-color: rgba(255, 255, 255, 0.85);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 245, 235, 0.95));
             margin: 20px;
-            border-radius: 8px;
-            max-width: 100%;
+            border-radius: 15px;
+            max-width: 800px;
             box-sizing: border-box;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
 
         form h2 {
             color: #ff6b35;
             margin-top: 0;
             text-align: center;
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
 
+        /* Form Section Animation */
         .form-section {
             display: none;
+            animation: fadeIn 0.5s ease-in;
         }
 
         .form-section.active {
             display: block;
         }
 
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Enhanced Navigation Buttons */
         .form-navigation {
-            margin-top: 20px;
+            margin-top: 30px;
             text-align: center;
         }
 
         .form-navigation button {
-            padding: 12px 30px;
-            font-size: 16px;
+            padding: 14px 35px;
+            font-size: 17px;
             margin: 0 10px;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
             background-color: #ff6b35;
             color: white;
             font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(255, 107, 53, 0.3);
         }
 
         .form-navigation button:hover {
             background-color: #e55a2b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 107, 53, 0.4);
+        }
+
+        .form-navigation button:active {
+            transform: translateY(0);
         }
 
         .form-navigation button:disabled {
             background-color: #ccc;
             cursor: not-allowed;
+            box-shadow: none;
         }
 
+        /* Enhanced Input Fields */
         input[type="text"],
+        input[type="tel"],
         input[type="number"],
         input[type="email"],
         textarea {
             width: 100%;
-            padding: 10px;
-            margin-top: 5px;
+            padding: 12px 15px;
+            margin-top: 8px;
+            margin-bottom: 5px;
             border: 2px solid #ddd;
-            border-radius: 5px;
+            border-radius: 8px;
             font-size: 16px;
             box-sizing: border-box;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            font-family: Arial, sans-serif;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #ff6b35;
+            box-shadow: 0 0 8px rgba(255, 107, 53, 0.2);
         }
 
         textarea {
-            min-height: 100px;
+            min-height: 120px;
             resize: vertical;
         }
 
+        /* Enhanced Labels */
         label {
             font-weight: bold;
             color: #333;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
         }
 
+        /* Enhanced Radio and Checkbox */
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+            margin-left: 5px;
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+            accent-color: #ff6b35;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .radio-option,
+        .checkbox-option {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        /* Enhanced Section Indicator */
         .section-indicator {
             text-align: center;
-            margin-bottom: 20px;
-            color: #ff6b35;
+            margin-bottom: 25px;
+            padding: 12px;
+            color: white;
             font-weight: bold;
+            font-size: 18px;
+            background: linear-gradient(135deg, #ff6b35, #ff8c5a);
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(255, 107, 53, 0.3);
         }
 
         @keyframes typing {
@@ -218,64 +297,110 @@
     <p>Phone: 8668556842</p>
 </section>
 
-<form id="feedback" onsubmit="return handleSubmit(event)" style="padding:30px; font-size:18px; background-color: rgba(255,255,255,0.85); margin:20px; border-radius:8px;">
+<form id="feedback" onsubmit="return handleSubmit(event)">
     <h2>Feedback Form</h2>
 
+    <!-- Section 1: Personal Details -->
     <div class="form-section active" id="section1">
         <div class="section-indicator">Section 1 of 2: Personal Details</div>
 
-        <label>Name: </label><br>
+        <label>Name: </label>
         <input type="text" name="Fullname" id="fullname" placeholder="Enter your name">
-        <br><br>
 
-        <label>Contact: </label><br>
+        <label>Contact: </label>
         <input type="tel" name="number" id="contact" placeholder="Enter contact details">
-        <br><br>
 
-        <label>Email: </label><br>
-        <input type="email" name="email" id="email" placeholder="Enter email">
-        <br><br>
+        <label>Email: </label>
+        <input type="email" name="email" id="email" placeholder="Enter email (optional)">
 
         <div class="form-navigation">
-            <button type="button" onclick="nextSection()">Next</button>
+            <button type="button" onclick="nextSection()">Next →</button>
         </div>
     </div>
 
+    <!-- Section 2: Feedback Questions -->
     <div class="form-section" id="section2">
         <div class="section-indicator">Section 2 of 2: Your Feedback</div>
 
-        <label>How would you rate your overall experience? (1-5 stars)</label><br>
-        <input type="radio" name="rate" value="1"> 1
-        <input type="radio" name="rate" value="2"> 2
-        <input type="radio" name="rate" value="3"> 3
-        <input type="radio" name="rate" value="4"> 4
-        <input type="radio" name="rate" value="5"> 5
-        <br><br>
+        <label>How would you rate your overall experience?</label>
+        <div class="radio-group">
+            <div class="radio-option">
+                <input type="radio" name="rate" value="1" id="rate1">
+                <label for="rate1" style="display: inline; margin: 0;">⭐ 1</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="rate" value="2" id="rate2">
+                <label for="rate2" style="display: inline; margin: 0;">⭐ 2</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="rate" value="3" id="rate3">
+                <label for="rate3" style="display: inline; margin: 0;">⭐ 3</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="rate" value="4" id="rate4">
+                <label for="rate4" style="display: inline; margin: 0;">⭐ 4</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="rate" value="5" id="rate5">
+                <label for="rate5" style="display: inline; margin: 0;">⭐ 5</label>
+            </div>
+        </div>
 
-        <label><strong>How was the service?</strong></label><br>
-        <input type="radio" name="service_rating" value="1"> Poor
-        <input type="radio" name="service_rating" value="2"> Fair
-        <input type="radio" name="service_rating" value="3"> Good
-        <input type="radio" name="service_rating" value="4"> Very Good
-        <input type="radio" name="service_rating" value="5"> Excellent
-        <br><br>
+        <label>How was the service?</label>
+        <div class="radio-group">
+            <div class="radio-option">
+                <input type="radio" name="service_rating" value="1" id="service1">
+                <label for="service1" style="display: inline; margin: 0;">Poor</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="service_rating" value="2" id="service2">
+                <label for="service2" style="display: inline; margin: 0;">Fair</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="service_rating" value="3" id="service3">
+                <label for="service3" style="display: inline; margin: 0;">Good</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="service_rating" value="4" id="service4">
+                <label for="service4" style="display: inline; margin: 0;">Very Good</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" name="service_rating" value="5" id="service5">
+                <label for="service5" style="display: inline; margin: 0;">Excellent</label>
+            </div>
+        </div>
 
-        <label><strong>Which dishes did you try? (Select all that apply)</strong></label><br>
-        <input type="checkbox" name="dishes" value="masala_dosa"> Masala Dosa<br>
-        <input type="checkbox" name="dishes" value="tea"> Tea<br>
-        <input type="checkbox" name="dishes" value="coffee"> Coffee<br>
-        <input type="checkbox" name="dishes" value="pineapple_sheera"> Pineapple Sheera<br>
-        <input type="checkbox" name="dishes" value="other"> Other
-        <br><br>
+        <label>Which dishes did you try? (Select all that apply)</label>
+        <div class="checkbox-group">
+            <div class="checkbox-option">
+                <input type="checkbox" name="dishes" value="masala_dosa" id="dish1">
+                <label for="dish1" style="display: inline; margin: 0;">Masala Dosa</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" name="dishes" value="tea" id="dish2">
+                <label for="dish2" style="display: inline; margin: 0;">Tea</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" name="dishes" value="coffee" id="dish3">
+                <label for="dish3" style="display: inline; margin: 0;">Coffee</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" name="dishes" value="pineapple_sheera" id="dish4">
+                <label for="dish4" style="display: inline; margin: 0;">Pineapple Sheera</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" name="dishes" value="other" id="dish5">
+                <label for="dish5" style="display: inline; margin: 0;">Other</label>
+            </div>
+        </div>
 
-        <label><strong>What did we do well?</strong></label><br>
-        <textarea name="positive_feedback" placeholder="Share what you enjoyed..."></textarea>
-        <br><br>
+        <label>What did we do well?</label>
+        <textarea name="positive_feedback" placeholder="Share what you enjoyed about your experience..."></textarea>
 
         <div class="form-navigation">
-            <button type="button" onclick="prevSection()">Previous</button>
-            <button type="submit">Submit Feedback</button>
-            <button type="reset" onclick="resetForm()">Clear Form</button>
+            <button type="button" onclick="prevSection()">← Previous</button>
+            <button type="submit">Submit Feedback ✓</button>
+            <button type="button" onclick="resetForm()">Clear Form</button>
         </div>
     </div>
 </form>
