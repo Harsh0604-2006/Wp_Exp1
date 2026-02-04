@@ -1,0 +1,477 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A36A00;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header, nav, section, footer, form {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.typewriter-wrapper {
+    text-align: center;
+}
+
+.typewriter {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #333;
+    width: 0;
+    animation: typing 4s steps(52, end) forwards,
+               blink 0.7s step-end infinite;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(255, 107, 53, 0.9);
+    color: white;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+nav table {
+    cellpadding: 10;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff6b35;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Marquee Styling */
+marquee {
+    background-color: #ff6b35;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Home Section */
+#home {
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.85);
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/* Menu Section */
+#menu {
+    padding: 20px;
+}
+
+#menu h2,
+#menu h3 {
+    color: #ff6b35;
+}
+
+#menu table {
+    border: 1px;
+    cellpadding: 15;
+    cellspacing: 0;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#menu td {
+    text-align: center;
+    border: 2px solid #ff6b35;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu img {
+    height: 100px;
+    border-radius: 8px;
+}
+
+/* About Section */
+#about {
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#about h2 {
+    color: #ff6b35;
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#contact h2 {
+    color: #ff6b35;
+}
+
+/* Enhanced Form Styling */
+form {
+    text-align: left;
+    padding: 40px;
+    font-size: 18px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 245, 235, 0.95));
+    margin: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+form h2 {
+    color: #ff6b35;
+    margin-top: 0;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section Styling */
+.form-section {
+    margin-bottom: 30px;
+}
+
+/* Enhanced Submit Button */
+.form-submit {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form-submit input[type="submit"],
+.form-submit input[type="reset"] {
+    padding: 14px 35px;
+    font-size: 17px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ff6b35;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 107, 53, 0.3);
+}
+
+.form-submit input[type="submit"]:hover,
+.form-submit input[type="reset"]:hover {
+    background-color: #e55a2b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 107, 53, 0.4);
+}
+
+.form-submit input[type="submit"]:active,
+.form-submit input[type="reset"]:active {
+    transform: translateY(0);
+}
+
+.form-submit input[type="reset"] {
+    background-color: #999;
+}
+
+.form-submit input[type="reset"]:hover {
+    background-color: #777;
+}
+
+/* Enhanced Input Fields */
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 0 8px rgba(255, 107, 53, 0.2);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Enhanced Labels */
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Required Field Asterisk */
+.required {
+    color: red;
+}
+
+/* Enhanced Radio and Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #ff6b35;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.radio-option,
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-option label,
+.checkbox-option label {
+    display: inline;
+    margin: 0;
+}
+
+/* Enhanced Section Indicator */
+.section-indicator {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background: linear-gradient(135deg, #ff6b35, #ff8c5a);
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(255, 107, 53, 0.3);
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    padding: 15px;
+}
+
+/* Animations */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 52ch; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Header */
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    /* Navigation */
+    nav table {
+        width: 100%;
+    }
+
+    nav td {
+        display: block;
+        padding: 5px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    /* Marquee */
+    marquee {
+        font-size: 16px;
+    }
+
+    /* Sections */
+    #home, #about, #contact {
+        margin: 10px;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    /* Typewriter */
+    .typewriter {
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    /* Menu */
+    #menu {
+        padding: 10px;
+    }
+
+    #menu table {
+        width: 100%;
+    }
+
+    #menu td {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #menu img {
+        height: 80px;
+    }
+
+    /* Form */
+    form {
+        padding: 25px;
+        margin: 10px;
+    }
+
+    form h2 {
+        font-size: 26px;
+    }
+
+    .section-indicator {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-submit input[type="submit"],
+    .form-submit input[type="reset"] {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header */
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    /* Navigation */
+    nav a {
+        font-size: 16px;
+    }
+
+    /* Sections */
+    #home, #about, #contact {
+        font-size: 16px;
+    }
+
+    /* Menu */
+    #menu h2, #menu h3 {
+        font-size: 20px;
+    }
+
+    #menu img {
+        height: 60px;
+    }
+
+    /* Form */
+    form {
+        padding: 20px;
+    }
+
+    form h2 {
+        font-size: 22px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="email"],
+    textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .form-submit input[type="submit"],
+    .form-submit input[type="reset"] {
+        padding: 12px 25px;
+        font-size: 15px;
+    }
+}

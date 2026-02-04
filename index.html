@@ -4,237 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Ramashrey Dosa Centre</title>
-
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #A36A00;
-            margin: 0;
-            padding: 0;
-        }
-
-        header, nav, section, footer, form {
-            width: 100%;
-            text-align: center;
-            box-sizing: border-box;
-        }
-
-        table {
-            margin: 0 auto;
-        }
-
-        .typewriter-wrapper {
-            text-align: center;
-        }
-
-        .typewriter {
-            display: inline-block;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 2px solid #333;
-            width: 0;
-            animation: typing 4s steps(52, end) forwards,
-                       blink 0.7s step-end infinite;
-        }
-
-        /* Enhanced Form Styling */
-        form {
-            text-align: left; 
-            padding: 40px;
-            font-size: 18px;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 245, 235, 0.95));
-            margin: 20px;
-            border-radius: 15px;
-            max-width: 800px;
-            box-sizing: border-box;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        form h2 {
-            color: #ff6b35;
-            margin-top: 0;
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 10px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Form Section Animation */
-        .form-section {
-            display: none;
-            animation: fadeIn 0.5s ease-in;
-        }
-
-        .form-section.active {
-            display: block;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Enhanced Navigation Buttons */
-        .form-navigation {
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        .form-navigation button {
-            padding: 14px 35px;
-            font-size: 17px;
-            margin: 0 10px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            background-color: #ff6b35;
-            color: white;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(255, 107, 53, 0.3);
-        }
-
-        .form-navigation button:hover {
-            background-color: #e55a2b;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(255, 107, 53, 0.4);
-        }
-
-        .form-navigation button:active {
-            transform: translateY(0);
-        }
-
-        .form-navigation button:disabled {
-            background-color: #ccc;
-            cursor: not-allowed;
-            box-shadow: none;
-        }
-
-        /* Enhanced Input Fields */
-        input[type="text"],
-        input[type="tel"],
-        input[type="number"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 12px 15px;
-            margin-top: 8px;
-            margin-bottom: 5px;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            font-size: 16px;
-            box-sizing: border-box;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-            font-family: Arial, sans-serif;
-        }
-
-        input[type="text"]:focus,
-        input[type="tel"]:focus,
-        input[type="number"]:focus,
-        input[type="email"]:focus,
-        textarea:focus {
-            outline: none;
-            border-color: #ff6b35;
-            box-shadow: 0 0 8px rgba(255, 107, 53, 0.2);
-        }
-
-        textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-
-        /* Enhanced Labels */
-        label {
-            font-weight: bold;
-            color: #333;
-            display: block;
-            margin-top: 15px;
-            margin-bottom: 5px;
-        }
-
-        /* Enhanced Radio and Checkbox */
-        input[type="radio"],
-        input[type="checkbox"] {
-            margin-right: 8px;
-            margin-left: 5px;
-            cursor: pointer;
-            width: 18px;
-            height: 18px;
-            accent-color: #ff6b35;
-        }
-
-        .radio-group,
-        .checkbox-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 10px;
-        }
-
-        .radio-option,
-        .checkbox-option {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        /* Enhanced Section Indicator */
-        .section-indicator {
-            text-align: center;
-            margin-bottom: 25px;
-            padding: 12px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            background: linear-gradient(135deg, #ff6b35, #ff8c5a);
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(255, 107, 53, 0.3);
-        }
-
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 52ch; }
-        }
-
-        @keyframes blink {
-            50% { border-color: transparent; }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body 
-      style="background-size: cover; background-attachment: fixed; background-position: center;">
+<body>
 
-<header style="background-color: rgba(255, 107, 53, 0.9); color: white; padding: 30px;">
-    <h1 style="margin: 0; font-size: 42px;">Ramashrey</h1>
-    <p style="margin-top: 10px; font-size: 18px;">Welcome to the dosa centre</p>
+<header>
+    <h1>Ramashrey</h1>
+    <p>Welcome to the dosa centre</p>
 </header>
 
-<nav style="background-color: rgba(255, 255, 255, 0.8); padding: 10px;">
+<nav>
     <table cellpadding="10">
         <tr>
-            <td><a href="#home" style="text-decoration:none; color:#ff6b35; font-size:20px; font-weight:bold;">Home</a></td>
-            <td><a href="#menu" style="text-decoration:none; color:#ff6b35; font-size:20px; font-weight:bold;">Menu</a></td>
-            <td><a href="#about" style="text-decoration:none; color:#ff6b35; font-size:20px; font-weight:bold;">About Us</a></td>
-            <td><a href="#contact" style="text-decoration:none; color:#ff6b35; font-size:20px; font-weight:bold;">Contact</a></td>
-            <td><a href="#feedback" style="text-decoration:none; color:#ff6b35; font-size:20px; font-weight:bold;">Feedback</a></td>
+            <td><a href="#home">Home</a></td>
+            <td><a href="#menu">Menu</a></td>
+            <td><a href="#about">About Us</a></td>
+            <td><a href="#contact">Contact</a></td>
+            <td><a href="#feedback">Feedback</a></td>
         </tr>
     </table>
 </nav>
 
-<marquee style="background-color:#ff6b35; color:white; padding:10px; font-size:18px;">
+<marquee>
     Welcome to Ramashrey Dosa Centre – TODAY'S SPECIAL: MYSORE MASALA DOSA & ROSE FALOODA
 </marquee>
 
-<section id="home" style="padding:25px; background-color: rgba(255,255,255,0.85); font-size:20px; margin:20px; border-radius:8px;">
+<section id="home">
     <p class="typewriter-wrapper">
         <span class="typewriter">
             Experience the pure harmony of authentic South Indian food
@@ -242,40 +38,38 @@
     </p>
 </section>
 
-<section id="menu" style="padding:20px;">
-    <h2 style="color:#ff6b35;">Menu</h2>
-    <h3 style="color:#ff6b35;">Our Most Ordered Items</h3>
+<section id="menu">
+    <h2>Menu</h2>
+    <h3>Our Most Ordered Items</h3>
 
-    <table border="1" cellpadding="15" cellspacing="0"
-           style="border-collapse: collapse; background-color: rgba(255,255,255,0.9); box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-
+    <table border="1" cellpadding="15" cellspacing="0">
         <tr>
-            <td align="center" style="border:2px solid #ff6b35;">
-                <a href="https://www.youtube.com/shorts/6DCRQ0wx1tg" style="text-decoration:none; color:black;">
-                    <img src="assets/tea.jpg" height="100" style="border-radius:8px;"><br>
+            <td>
+                <a href="https://www.youtube.com/shorts/6DCRQ0wx1tg">
+                    <img src="assets/tea.jpg" alt="Tea"><br>
                     <strong>Tea</strong>
                 </a>
             </td>
 
-            <td align="center" style="border:2px solid #ff6b35;">
-                <a href="https://www.youtube.com/watch?v=J75VQSxOtdo&pp=ygUTbWFzYWxhIGRvc2EgIHJlY2lwZQ%3D%3D" style="text-decoration:none; color:black;">
-                    <img src="assets/dosa.webp" height="100" style="border-radius:8px;"><br>
+            <td>
+                <a href="https://www.youtube.com/watch?v=J75VQSxOtdo&pp=ygUTbWFzYWxhIGRvc2EgIHJlY2lwZQ%3D%3D">
+                    <img src="assets/dosa.webp" alt="Masala Dosa"><br>
                     <strong>Masala Dosa</strong>
                 </a>
             </td>
         </tr>
 
         <tr>
-            <td align="center" style="border:2px solid #ff6b35;">
-                <a href="https://www.youtube.com/shorts/qgMU8nFeg-g" style="text-decoration:none; color:black;">
-                    <img src="assets/coffee.jpg" height="100" style="border-radius:8px;"><br>
+            <td>
+                <a href="https://www.youtube.com/shorts/qgMU8nFeg-g">
+                    <img src="assets/coffee.jpg" alt="Coffee"><br>
                     <strong>Coffee</strong>
                 </a>
             </td>
 
-            <td align="center" style="border:2px solid #ff6b35;">
-                <a href="https://www.youtube.com/shorts/lm_JdH2Blnc" style="text-decoration:none; color:black;">
-                    <img src="assets/pineapple sheera.jpg" height="100" style="border-radius:8px;"><br>
+            <td>
+                <a href="https://www.youtube.com/shorts/lm_JdH2Blnc">
+                    <img src="assets/pineapple sheera.jpg" alt="Pineapple Sheera"><br>
                     <strong>Pineapple Sheera</strong>
                 </a>
             </td>
@@ -283,90 +77,86 @@
     </table>
 </section>
 
-<section id="about" style="padding:20px; font-size:20px; background-color: rgba(255,255,255,0.85); margin:20px; border-radius:8px;">
-    <h2 style="color:#ff6b35;">About Us</h2>
+<section id="about">
+    <h2>About Us</h2>
     <p>
         Ramashrey is a pure vegetarian South Indian restaurant serving fresh,
         authentic food prepared with traditional recipes and care.
     </p>
 </section>
 
-<section id="contact" style="padding:20px; font-size:20px; background-color: rgba(255,255,255,0.85); margin:20px; border-radius:8px;">
-    <h2 style="color:#ff6b35;">Contact</h2>
-    <p>Email: cookery@gmail.com</p>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ec8f838387899e95ac8b818d8580c28f8381">[email&#160;protected]</a></p>
     <p>Phone: 8668556842</p>
 </section>
 
-<form id="feedback" onsubmit="return handleSubmit(event)">
+<form id="feedback" action="#" method="post">
     <h2>Feedback Form</h2>
 
     <!-- Section 1: Personal Details -->
-    <div class="form-section active" id="section1">
-        <div class="section-indicator">Section 1 of 2: Personal Details</div>
+    <div class="form-section">
+        <div class="section-indicator">Personal Details</div>
 
-        <label>Name: </label>
-        <input type="text" name="Fullname" id="fullname" placeholder="Enter your name">
+        <label for="fullname">Name: <span class="required">*</span></label>
+        <input type="text" name="Fullname" id="fullname" placeholder="Enter your name" required>
 
-        <label>Contact: </label>
-        <input type="tel" name="number" id="contact" placeholder="Enter contact details">
+        <label for="contact">Contact: <span class="required">*</span></label>
+        <input type="tel" name="number" id="contact" placeholder="Enter contact details" required>
 
-        <label>Email: </label>
+        <label for="email">Email: </label>
         <input type="email" name="email" id="email" placeholder="Enter email (optional)">
-
-        <div class="form-navigation">
-            <button type="button" onclick="nextSection()">Next →</button>
-        </div>
     </div>
 
     <!-- Section 2: Feedback Questions -->
-    <div class="form-section" id="section2">
-        <div class="section-indicator">Section 2 of 2: Your Feedback</div>
+    <div class="form-section">
+        <div class="section-indicator">Your Feedback</div>
 
-        <label>How would you rate your overall experience?</label>
+        <label>How would you rate your overall experience? <span class="required">*</span></label>
         <div class="radio-group">
             <div class="radio-option">
-                <input type="radio" name="rate" value="1" id="rate1">
-                <label for="rate1" style="display: inline; margin: 0;">⭐ 1</label>
+                <input type="radio" name="rate" value="1" id="rate1" required>
+                <label for="rate1">⭐ 1</label>
             </div>
             <div class="radio-option">
                 <input type="radio" name="rate" value="2" id="rate2">
-                <label for="rate2" style="display: inline; margin: 0;">⭐ 2</label>
+                <label for="rate2">⭐ 2</label>
             </div>
             <div class="radio-option">
                 <input type="radio" name="rate" value="3" id="rate3">
-                <label for="rate3" style="display: inline; margin: 0;">⭐ 3</label>
+                <label for="rate3">⭐ 3</label>
             </div>
             <div class="radio-option">
                 <input type="radio" name="rate" value="4" id="rate4">
-                <label for="rate4" style="display: inline; margin: 0;">⭐ 4</label>
+                <label for="rate4">⭐ 4</label>
             </div>
             <div class="radio-option">
                 <input type="radio" name="rate" value="5" id="rate5">
-                <label for="rate5" style="display: inline; margin: 0;">⭐ 5</label>
+                <label for="rate5">⭐ 5</label>
             </div>
         </div>
 
-        <label>How was the service?</label>
+        <label>How was the service? <span class="required">*</span></label>
         <div class="radio-group">
             <div class="radio-option">
-                <input type="radio" name="service_rating" value="1" id="service1">
-                <label for="service1" style="display: inline; margin: 0;">Poor</label>
+                <input type="radio" name="service_rating" value="1" id="service1" required>
+                <label for="service1">Poor</label>
             </div>
             <div class="radio-option">
                 <input type="radio" name="service_rating" value="2" id="service2">
-                <label for="service2" style="display: inline; margin: 0;">Fair</label>
+                <label for="service2">Fair</label>
             </div>
             <div class="radio-option">
                 <input type="radio" name="service_rating" value="3" id="service3">
-                <label for="service3" style="display: inline; margin: 0;">Good</label>
+                <label for="service3">Good</label>
             </div>
             <div class="radio-option">
                 <input type="radio" name="service_rating" value="4" id="service4">
-                <label for="service4" style="display: inline; margin: 0;">Very Good</label>
+                <label for="service4">Very Good</label>
             </div>
             <div class="radio-option">
                 <input type="radio" name="service_rating" value="5" id="service5">
-                <label for="service5" style="display: inline; margin: 0;">Excellent</label>
+                <label for="service5">Excellent</label>
             </div>
         </div>
 
@@ -374,92 +164,30 @@
         <div class="checkbox-group">
             <div class="checkbox-option">
                 <input type="checkbox" name="dishes" value="masala_dosa" id="dish1">
-                <label for="dish1" style="display: inline; margin: 0;">Masala Dosa</label>
+                <label for="dish1">Masala Dosa</label>
             </div>
             <div class="checkbox-option">
                 <input type="checkbox" name="dishes" value="tea" id="dish2">
-                <label for="dish2" style="display: inline; margin: 0;">Tea</label>
+                <label for="dish2">Tea</label>
             </div>
             <div class="checkbox-option">
                 <input type="checkbox" name="dishes" value="coffee" id="dish3">
-                <label for="dish3" style="display: inline; margin: 0;">Coffee</label>
+                <label for="dish3">Coffee</label>
             </div>
             <div class="checkbox-option">
                 <input type="checkbox" name="dishes" value="pineapple_sheera" id="dish4">
-                <label for="dish4" style="display: inline; margin: 0;">Pineapple Sheera</label>
+                <label for="dish4">Pineapple Sheera</label>
             </div>
             <div class="checkbox-option">
                 <input type="checkbox" name="dishes" value="other" id="dish5">
-                <label for="dish5" style="display: inline; margin: 0;">Other</label>
+                <label for="dish5">Other</label>
             </div>
         </div>
 
-        <label>What did we do well?</label>
-        <textarea name="positive_feedback" placeholder="Share what you enjoyed about your experience..."></textarea>
-
-        <div class="form-navigation">
-            <button type="button" onclick="prevSection()">← Previous</button>
-            <button type="submit">Submit Feedback ✓</button>
-            <button type="button" onclick="resetForm()">Clear Form</button>
-        </div>
+        <label for="positive_feedback">What did we do well?</label>
+        <textarea name="positive_feedback" id="positive_feedback" placeholder="Share what you enjoyed about your experience..."></textarea>
     </div>
-</form>
 
-<footer style="background-color: rgba(51,51,51,0.9); color:white; padding:15px;">
-    <p>&copy; Cooked by Harsh and Atharva</p>
-</footer>
-
-<script>
-    function nextSection() {
-        const name = document.getElementById('fullname').value;
-        const contact = document.getElementById('contact').value;
-
-        if (name === '' || name === null) {
-            alert('Please enter your name');
-            document.getElementById('fullname').focus();
-            return false;
-        }
-
-        if (contact === '' || contact === null) {
-            alert('Please enter your contact details');
-            document.getElementById('contact').focus();
-            return false;
-        }
-
-        document.getElementById('section1').classList.remove('active');
-        document.getElementById('section2').classList.add('active');
-
-        document.getElementById('feedback').scrollIntoView({ behavior: 'smooth' });
-    }
-
-    function prevSection() {
-        document.getElementById('section2').classList.remove('active');
-        document.getElementById('section1').classList.add('active');
-
-        document.getElementById('feedback').scrollIntoView({ behavior: 'smooth' });
-    }
-
-    function resetForm() {
-        document.getElementById('feedback').reset();
-        document.getElementById('section2').classList.remove('active');
-        document.getElementById('section1').classList.add('active');
-    }
-
-    function handleSubmit(event) {
-        event.preventDefault();
-        
-        alert('Thank you for your feedback! Your response has been submitted.');
-       
-        document.getElementById('feedback').reset();
-        
-        document.getElementById('section2').classList.remove('active');
-        document.getElementById('section1').classList.add('active');
-       
-        document.getElementById('feedback').scrollIntoView({ behavior: 'smooth' });
-        
-        return false;
-    }
-</script>
-
-</body>
-</html>
+    <div class="form-submit">
+        <input type="submit" value="Submit Feedback ✓">
+        <input type="reset" va

@@ -1,0 +1,335 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A36A00;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
+
+header, nav, footer {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+table {
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(255, 107, 53, 0.9);
+    color: white;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+nav table {
+    cellpadding: 10;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff6b35;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e55a2b;
+}
+
+/* Signup Container */
+.signup-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Enhanced Form Styling */
+form {
+    text-align: left;
+    padding: 40px;
+    font-size: 18px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 245, 235, 0.95));
+    margin: 20px auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+form h2 {
+    color: #ff6b35;
+    margin-top: 0;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+/* Form Section Styling */
+.form-section {
+    margin-bottom: 30px;
+}
+
+/* Enhanced Submit Button */
+.form-submit {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form-submit input[type="submit"],
+.form-submit input[type="reset"] {
+    padding: 14px 35px;
+    font-size: 17px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ff6b35;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 107, 53, 0.3);
+}
+
+.form-submit input[type="submit"]:hover,
+.form-submit input[type="reset"]:hover {
+    background-color: #e55a2b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 107, 53, 0.4);
+}
+
+.form-submit input[type="submit"]:active,
+.form-submit input[type="reset"]:active {
+    transform: translateY(0);
+}
+
+.form-submit input[type="reset"] {
+    background-color: #999;
+}
+
+.form-submit input[type="reset"]:hover {
+    background-color: #777;
+}
+
+/* Enhanced Input Fields */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 0 8px rgba(255, 107, 53, 0.2);
+}
+
+select {
+    cursor: pointer;
+    background-color: white;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Enhanced Labels */
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Required Field Asterisk */
+.required {
+    color: red;
+}
+
+/* Enhanced Radio and Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #ff6b35;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.radio-option,
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-option label,
+.checkbox-option label {
+    display: inline;
+    margin: 0;
+    cursor: pointer;
+}
+
+.checkbox-option-single {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.checkbox-option-single input[type="checkbox"] {
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.checkbox-option-single label {
+    display: inline;
+    margin: 0;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+/* Enhanced Section Indicator */
+.section-indicator {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background: linear-gradient(135deg, #ff6b35, #ff8c5a);
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(255, 107, 53, 0.3);
+}
+
+/* Login Link */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 16px;
+}
+
+.login-link a {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #e55a2b;
+    text-decoration: underline;
+}
+
+/* Terms Link */
+.terms-link {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.terms-link:hover {
+    color: #e55a2b;
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    padding: 15px;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    form h2 {
+        font-size: 26px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-submit input[type="submit"],
+    .form-submit input[type="reset"] {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
