@@ -34,7 +34,6 @@ table {
                blink 0.7s step-end infinite;
 }
 
-/* Header Styling */
 header {
     background-color: rgba(255, 107, 53, 0.9);
     color: white;
@@ -51,7 +50,6 @@ header p {
     font-size: 18px;
 }
 
-/* Navigation Styling */
 nav {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
@@ -68,7 +66,6 @@ nav a {
     font-weight: bold;
 }
 
-/* Marquee Styling */
 marquee {
     background-color: #ff6b35;
     color: white;
@@ -76,7 +73,6 @@ marquee {
     font-size: 18px;
 }
 
-/* Home Section */
 #home {
     padding: 25px;
     background-color: rgba(255, 255, 255, 0.85);
@@ -85,7 +81,6 @@ marquee {
     border-radius: 8px;
 }
 
-/* Menu Section */
 #menu {
     padding: 20px;
 }
@@ -119,7 +114,6 @@ marquee {
     border-radius: 8px;
 }
 
-/* About Section */
 #about {
     padding: 20px;
     font-size: 20px;
@@ -132,7 +126,6 @@ marquee {
     color: #ff6b35;
 }
 
-/* Contact Section */
 #contact {
     padding: 20px;
     font-size: 20px;
@@ -145,7 +138,6 @@ marquee {
     color: #ff6b35;
 }
 
-/* Enhanced Form Styling */
 form {
     text-align: left;
     padding: 40px;
@@ -167,12 +159,10 @@ form h2 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* Form Section Styling */
 .form-section {
     margin-bottom: 30px;
 }
 
-/* Enhanced Submit Button */
 .form-submit {
     margin-top: 30px;
     text-align: center;
@@ -213,7 +203,6 @@ form h2 {
     background-color: #777;
 }
 
-/* Enhanced Input Fields */
 input[type="text"],
 input[type="tel"],
 input[type="number"],
@@ -246,7 +235,6 @@ textarea {
     resize: vertical;
 }
 
-/* Enhanced Labels */
 label {
     font-weight: bold;
     color: #333;
@@ -255,12 +243,10 @@ label {
     margin-bottom: 5px;
 }
 
-/* Required Field Asterisk */
 .required {
     color: red;
 }
 
-/* Enhanced Radio and Checkbox */
 input[type="radio"],
 input[type="checkbox"] {
     margin-right: 8px;
@@ -292,7 +278,6 @@ input[type="checkbox"] {
     margin: 0;
 }
 
-/* Enhanced Section Indicator */
 .section-indicator {
     text-align: center;
     margin-bottom: 25px;
@@ -305,14 +290,12 @@ input[type="checkbox"] {
     box-shadow: 0 3px 10px rgba(255, 107, 53, 0.3);
 }
 
-/* Footer Styling */
 footer {
     background-color: rgba(51, 51, 51, 0.9);
     color: white;
     padding: 15px;
 }
 
-/* Animations */
 @keyframes typing {
     from { width: 0; }
     to { width: 52ch; }
@@ -322,10 +305,8 @@ footer {
     50% { border-color: transparent; }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    /* Header */
-    header h1 {
+  header h1 {
         font-size: 32px;
     }
 
@@ -333,7 +314,6 @@ footer {
         font-size: 16px;
     }
 
-    /* Navigation */
     nav table {
         width: 100%;
     }
@@ -347,25 +327,21 @@ footer {
         font-size: 18px;
     }
 
-    /* Marquee */
     marquee {
         font-size: 16px;
     }
 
-    /* Sections */
     #home, #about, #contact {
         margin: 10px;
         padding: 15px;
         font-size: 18px;
     }
 
-    /* Typewriter */
     .typewriter {
         font-size: 14px;
         white-space: normal;
     }
 
-    /* Menu */
     #menu {
         padding: 10px;
     }
@@ -384,7 +360,6 @@ footer {
         height: 80px;
     }
 
-    /* Form */
     form {
         padding: 25px;
         margin: 10px;
@@ -412,14 +387,12 @@ footer {
         margin: 10px 0;
     }
 
-    /* Footer */
     footer {
         font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
-    /* Header */
     header {
         padding: 20px;
     }
@@ -432,17 +405,14 @@ footer {
         font-size: 14px;
     }
 
-    /* Navigation */
     nav a {
         font-size: 16px;
     }
 
-    /* Sections */
     #home, #about, #contact {
         font-size: 16px;
     }
 
-    /* Menu */
     #menu h2, #menu h3 {
         font-size: 20px;
     }
@@ -451,7 +421,6 @@ footer {
         height: 60px;
     }
 
-    /* Form */
     form {
         padding: 20px;
     }
