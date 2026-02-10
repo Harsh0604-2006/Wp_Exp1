@@ -127,10 +127,10 @@ marquee {
 }
 
 #contact {
-    padding: 20px;
-    font-size: 20px;
+   
+    font-size: 15px;
     background-color: rgba(255, 255, 255, 0.85);
-    margin: 20px;
+   
     border-radius: 8px;
 }
 

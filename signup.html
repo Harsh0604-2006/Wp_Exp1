@@ -23,7 +23,7 @@
 </nav>
 
 <div class="signup-container">
-    <form id="signup" action="index.html" method="get">
+    <form id="signup" action="/index.html" method="get">
         <h2>Create Your Account</h2>
         <p class="form-subtitle">Sign up to receive exclusive offers and updates!</p>
 
@@ -153,3 +153,89 @@
 
 </body>
 </html>
+
+<script>
+    document.getElementById("signup").addEventListener("submit", function(event) {
+        // Prevent form submission
+        event.preventDefault();
+
+        // Get form values
+        const firstName = document.getElementById("firstname").value.trim();
+        const lastName = document.getElementById("lastname").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const dob = document.getElementById("dob").value;
+        const username = document.getElementById("username").value.trim();
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirm-password").value;
+        const terms = document.getElementById("terms").checked;
+
+        // Validation flags
+        let isValid = true;
+        let errorMessage = "";
+
+        // Validate first name
+        if (firstName === "") {
+            errorMessage += "First name is required.\n";
+            isValid = false;
+        }
+
+        // Validate last name
+        if (lastName === "") {
+            errorMessage += "Last name is required.\n";
+            isValid = false;
+        }
+
+        // Validate email
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            errorMessage += "Please enter a valid email address.\n";
+            isValid = false;
+        }
+
+        // Validate phone number
+        const phonePattern = /^[0-9]{10}$/;
+        if (!phonePattern.test(phone)) {
+            errorMessage += "Please enter a valid 10-digit phone number.\n";
+            isValid = false;
+        }
+
+        // Validate date of birth
+        if (dob === "") {
+            errorMessage += "Date of birth is required.\n";
+            isValid = false;
+        }
+
+        // Validate username
+        if (username === "") {
+            errorMessage += "Username is required.\n";
+            isValid = false;
+        }
+
+        // Validate password
+        if (password.length < 6) {
+            errorMessage += "Password must be at least 6 characters long.\n";
+            isValid = false;
+        }
+
+        // Validate confirm password
+        if (password !== confirmPassword) {
+            errorMessage += "Passwords do not match.\n";
+            isValid = false;
+        }
+
+        // Validate terms and conditions
+        if (!terms) {
+            errorMessage += "You must agree to the terms and conditions.\n";
+            isValid = false;
+        }
+
+        // Show error message or submit form
+        if (!isValid) {
+            alert(errorMessage);
+        } else {
+            alert("Form submitted successfully!\nRedirecting to the homepage...");
+            window.location.href = "index.html";
+        }
+    });
+</script>
