@@ -20,6 +20,22 @@ table {
     margin: 0 auto;
 }
 
+/*LOGO STYLING*/
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo-svg {
+    transition: transform 0.3s ease;
+}
+
+.logo-svg:hover {
+    transform: scale(1.05);
+}
+
 .typewriter-wrapper {
     text-align: center;
 }
@@ -390,6 +406,13 @@ footer {
     footer {
         font-size: 14px;
     }
+    
+    /* ========== SVG LOGO RESPONSIVE - START ========== */
+    .logo-svg {
+        width: 300px;
+        height: auto;
+    }
+    /* ========== SVG LOGO RESPONSIVE - END ========== */
 }
 
 @media (max-width: 480px) {
@@ -443,4 +466,11 @@ footer {
         padding: 12px 25px;
         font-size: 15px;
     }
+    
+    /* ========== SVG LOGO RESPONSIVE - START ========== */
+    .logo-svg {
+        width: 250px;
+        height: auto;
+    }
+    /* ========== SVG LOGO RESPONSIVE - END ========== */
 }

@@ -10,7 +10,85 @@
 <body>
 
 <header>
-    <h1>Ramashrey</h1>
+    <div class="logo-container">
+        <svg class="logo-svg" width="550" height="150" viewBox="0 0 550 150">
+            <defs>
+                <linearGradient id="dosaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f4d03f" />
+                    <stop offset="100%" stop-color="#d4a017" />
+                </linearGradient>
+                
+                <linearGradient id="sambharGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ff6b35" />
+                    <stop offset="100%" stop-color="#c44000" />
+                </linearGradient>
+
+                <radialGradient id="idliGrad">
+                    <stop offset="0%" stop-color="#ffffff" />
+                    <stop offset="100%" stop-color="#e8e8e8" />
+                </radialGradient>
+            </defs>
+
+            <!-- Banana Leaf background -->
+            <ellipse cx="80" cy="75" rx="70" ry="60" fill="#7cb342" opacity="0.3"/>
+            <path d="M 80 20 Q 88 75 80 130" stroke="#558b2f" stroke-width="2" fill="none" opacity="0.4"/>
+            <path d="M 80 20 Q 72 75 80 130" stroke="#558b2f" stroke-width="2" fill="none" opacity="0.4"/>
+            
+            <!-- Dosa (crispy rolled) -->
+            <ellipse cx="50" cy="65" rx="28" ry="16" fill="url(#dosaGrad)" stroke="#8B4513" stroke-width="2"/>
+            <ellipse cx="50" cy="65" rx="24" ry="12" fill="#f4d03f" opacity="0.7"/>
+            <path d="M 38 65 Q 50 63 62 65" stroke="#d4a017" stroke-width="1.5" fill="none"/>
+            <path d="M 40 70 Q 50 68 60 70" stroke="#d4a017" stroke-width="1.5" fill="none"/>
+            
+            <!-- Idlis stack (3 idlis) -->
+            <ellipse cx="110" cy="85" rx="20" ry="7" fill="url(#idliGrad)" stroke="#ccc" stroke-width="1.5"/>
+            <ellipse cx="110" cy="77" rx="20" ry="7" fill="url(#idliGrad)" stroke="#ccc" stroke-width="1.5"/>
+            <ellipse cx="110" cy="69" rx="20" ry="7" fill="url(#idliGrad)" stroke="#ccc" stroke-width="1.5"/>
+            
+            <!-- Sambhar bowl -->
+            <ellipse cx="80" cy="100" rx="24" ry="9" fill="url(#sambharGrad)"/>
+            <path d="M 56 100 Q 56 113 80 117 Q 104 113 104 100" fill="url(#sambharGrad)" stroke="#8B4513" stroke-width="2"/>
+            <ellipse cx="80" cy="100" rx="24" ry="9" fill="none" stroke="#8B4513" stroke-width="2"/>
+            <!-- Sambhar surface -->
+            <ellipse cx="80" cy="100" rx="20" ry="7" fill="#ff6b35" opacity="0.8"/>
+            <!-- Floating curry leaves -->
+            <ellipse cx="76" cy="98" rx="3" ry="1.5" fill="#2d5016" opacity="0.8"/>
+            <ellipse cx="84" cy="102" rx="3" ry="1.5" fill="#2d5016" opacity="0.8"/>
+            
+            <!-- Chutney bowl (small) -->
+            <ellipse cx="110" cy="105" rx="13" ry="5" fill="#90ee90"/>
+            <path d="M 97 105 Q 97 111 110 114 Q 123 111 123 105" fill="#90ee90" stroke="#666" stroke-width="1.5"/>
+            <ellipse cx="110" cy="105" rx="13" ry="5" fill="none" stroke="#666" stroke-width="1.5"/>
+            <ellipse cx="110" cy="105" rx="10" ry="4" fill="#7cb342" opacity="0.7"/>
+
+            <!-- Decorative steam lines from hot food -->
+            <path d="M 45 52 Q 42 44 45 38" stroke="#999" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"/>
+            <path d="M 55 52 Q 58 44 55 38" stroke="#999" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"/>
+            <path d="M 75 90 Q 72 82 75 76" stroke="#999" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"/>
+            <path d="M 85 90 Q 88 82 85 76" stroke="#999" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"/>
+            
+            <!-- Main text -->
+            <text x="170" y="70" style="font-size: 52px; letter-spacing: 2px; font-weight: bold; font-family: Georgia, serif; fill: #ffffff;">
+                <tspan>Ramashrey</tspan>
+            </text>
+            
+            <text x="170" y="100" style="font-size: 20px; fill: #ffffff; letter-spacing: 5px; font-family: Georgia, serif;">
+                DOSA CENTRE
+            </text>
+            
+            <!-- Decorative dots -->
+            <circle cx="160" cy="70" r="4" fill="#ffffff" opacity="0.8"/>
+            <circle cx="160" cy="100" r="4" fill="#ffffff" opacity="0.8"/>
+            
+            <!-- Traditional border design -->
+            <rect x="170" y="110" width="250" height="2" fill="#ffffff" opacity="0.4"/>
+            <circle cx="180" cy="111" r="2.5" fill="#ffffff" opacity="0.7"/>
+            <circle cx="205" cy="111" r="2.5" fill="#ffffff" opacity="0.7"/>
+            <circle cx="230" cy="111" r="2.5" fill="#ffffff" opacity="0.7"/>
+            <circle cx="255" cy="111" r="2.5" fill="#ffffff" opacity="0.7"/>
+        </svg>
+    </div>
+    
     <p>Welcome to the dosa centre</p>
 </header>
 
@@ -188,4 +266,9 @@
 
     <div class="form-submit">
         <input type="submit" value="Submit Feedback ✓">
-        <input type="reset" va
+        <input type="reset" value="Clear Form ✗">
+    </div>
+</form>
+
+</body>
+</html>
