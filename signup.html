@@ -23,7 +23,7 @@
 </nav>
 
 <div class="signup-container">
-    <form id="signup" action="/index.html" method="get">
+    <form id="signup" action="index.html" method="get">
         <h2>Create Your Account</h2>
         <p class="form-subtitle">Sign up to receive exclusive offers and updates!</p>
 
@@ -156,10 +156,9 @@
 
 <script>
     document.getElementById("signup").addEventListener("submit", function(event) {
-        // Prevent form submission
+       
         event.preventDefault();
 
-        // Get form values
         const firstName = document.getElementById("firstname").value.trim();
         const lastName = document.getElementById("lastname").value.trim();
         const email = document.getElementById("email").value.trim();
@@ -170,43 +169,36 @@
         const confirmPassword = document.getElementById("confirm-password").value;
         const terms = document.getElementById("terms").checked;
 
-        
         let isValid = true;
         let errorMessage = "";
 
-       
         if (firstName === "") {
             errorMessage += "First name is required.\n";
             isValid = false;
         }
 
-       
         if (lastName === "") {
             errorMessage += "Last name is required.\n";
             isValid = false;
         }
 
-       
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email)) {
             errorMessage += "Please enter a valid email address.\n";
             isValid = false;
         }
 
-        
         const phonePattern = /^[0-9]{10}$/;
         if (!phonePattern.test(phone)) {
             errorMessage += "Please enter a valid 10-digit phone number.\n";
             isValid = false;
         }
 
-        
         if (dob === "") {
             errorMessage += "Date of birth is required.\n";
             isValid = false;
         }
 
-    
         if (username === "") {
             errorMessage += "Username is required.\n";
             isValid = false;
@@ -217,19 +209,16 @@
             isValid = false;
         }
 
-       
         if (password !== confirmPassword) {
             errorMessage += "Passwords do not match.\n";
             isValid = false;
         }
 
-       
         if (!terms) {
             errorMessage += "You must agree to the terms and conditions.\n";
             isValid = false;
         }
 
-       
         if (!isValid) {
             alert(errorMessage);
         } else {
