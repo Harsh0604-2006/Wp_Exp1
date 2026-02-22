@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Ramashrey Dosa Centre</title>
-   <meta content="0; url=signup.html">
+   <!-- <meta content="0; url=signup.html"> -->
     <!-- <meta http-equiv="refresh" content="1; url=body.html"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+<script src="script.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGfqePFyVzW_xd2aFWCdQR6H8NxZ_HplE&callback=myMap"></script>
 <header>
     <div class="logo-container">
         <svg class="logo-svg" width="550" height="150" viewBox="0 0 550 150">
@@ -165,11 +166,19 @@
     </p>
 </section>
 
-<section id="contact">
+<div class="contact">
+    <div class="left">
     <h2>Contact</h2>
     <p>Email:cooked@gmail.com</p>
     <p>Phone: 8668556842</p>
-</section>
+    </div>
+    <div class="right">
+<h2>Find Us</h2>
+   <div id="googleMap"></div>
+    <button onclick="getLocation()">Show My Location</button>
+    <div id="demo"></div>
+    </div>
+</div>
 
 <form id="feedback" action="#" method="post">
     <h2>Feedback Form</h2>
@@ -272,5 +281,7 @@
     </div>
 </form>
 
+<script src="script.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGfqePFyVzW_xd2aFWCdQR6H8NxZ_HplE&callback=myMap"></script>
 </body>
 </html>

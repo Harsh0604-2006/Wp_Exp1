@@ -142,15 +142,16 @@ marquee {
     color: #ff6b35;
 }
 
-#contact {
-   
+.contact {
+   display: flex;
     font-size: 15px;
+    width:100%;
     background-color: rgba(255, 255, 255, 0.85);
-   
+   justify-content: space-between;
     border-radius: 8px;
 }
 
-#contact h2 {
+.contact h2 {
     color: #ff6b35;
 }
 
@@ -347,7 +348,7 @@ footer {
         font-size: 16px;
     }
 
-    #home, #about, #contact {
+    #home, #about, .contact {
         margin: 10px;
         padding: 15px;
         font-size: 18px;
@@ -432,7 +433,7 @@ footer {
         font-size: 16px;
     }
 
-    #home, #about, #contact {
+    #home, #about, .contact {
         font-size: 16px;
     }
 
@@ -473,4 +474,18 @@ footer {
         height: auto;
     }
     /* ========== SVG LOGO RESPONSIVE - END ========== */
+}
+
+#googleMap {
+    left: 10%;
+    width: 80%;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.left, .right {
+    text-align: center;
+    width: 48%;
+    box-sizing: border-box;
 }
